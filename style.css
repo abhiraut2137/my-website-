@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+header ul li a:hover {
+  color: #f0db4f;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-section {
+  background-image: url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section .container {
+  color: white;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 50px;
+}
+
+.home-section p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.about-section, .skills-section, .projects-section, .contact-section {
+  padding: 100px 0;
+}
+
+.about-section {
+  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.skills-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.skill, .project {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover, .project:hover {
+  transform: scale(1.05);
+}
+
+.skill i, .project img {
+  font-size: 50px;
+  color: #f0db4f;
+}
+
+.contact-section {
+  background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+button {
+  background-color: #f0db4f;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
