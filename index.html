@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Developer Portfolio</title>
+  <title>Abhishek_R_Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 </head>
 <body>
   <!-- Navbar -->
@@ -17,20 +22,23 @@
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact.</a></li>
       </ul>
     </nav>
   </header>
-
   <!-- Home Section -->
   <section id="home" class="home-section">
     <div class="container">
       <h1>Hello, I'm Abhishek</h1>
-      <p>I'm a passionate Web Developer specializing in front-end and back-end development.</p>
+      <p>I'm a passionate Web Developer specializing in front-end and back-end development.
+       <br> "A web developer" is a digital architect who weaves code and creativity together,
+           transforming abstract ideas into visually stunning and interactive realities, 
+           breathing life into the virtual world we navigat.
+      </p>
       <a href="#contact" class="btn">Get In Touch</a>
     </div>
   </section>
-
+ 
   <!-- About Section -->
   <section id="about" class="about-section">
     <div class="container">
@@ -64,6 +72,14 @@
           <i class="fas fa-database"></i>
           <h3>SQL</h3>
         </div>
+        <div class="skill">
+          <i class="fab fa-linux"></i>
+          <h3>Linux</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <h3>Asp.Net</h3>
+        </div>
       </div>
     </div>
   </section>
@@ -74,17 +90,44 @@
       <h2>Projects</h2>
       <div class="project-grid">
         <div class="project">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project Title 1</h3>
-          <p>A description of the project goes here. Technologies used: HTML, CSS, JavaScript.</p>
+          <a href="HSMS.html" target="_blank">
+          <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image" class="custom-image"></a>
+
+          <h3> Hardware Shop Management System</h3>
+          <p>Created using Java for front-end and MySQL for back-end.
+            <br>Enabled shop managers to store transactions and print bills, reducing manual effort by 50%</p>
         </div>
         <div class="project">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project Title 2</h3>
-          <p>A description of the project goes here. Technologies used: JavaScript, Node.js, SQL.</p>
+          <!-- <img src="project2.jpg" alt="Project 2"> -->
+          <a href="USM.html" target="_blank">
+          <img src="https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image" class="custom-image"></a>
+
+          <h3>User Management System</h3>
+          <p>Applied theoretical knowledge practically using MVC and .NET frameworks. 
+<br>Learned industrial coding standards and advanced features. 
+</p>
         </div>
+      
         <!-- Add more projects as needed -->
+        <div class="project">
+          <a href="HMS.html" target="_blank">
+          <img src="https://images.pexels.com/photos/9099821/pexels-photo-9099821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image" class="custom-image" ></a>
+          <h3>Hospital Management System
+</h3>
+          <p>Constructed with ASP.NET on the front-end, C#.NET in the backend and with MS SQL Server 
+for data storage solutions. 
+<br> Enhanced patient management, handling of appointments and billing processes. 
+</p>
       </div>
+        <div class="project">
+          <!-- <img src="project2.jpg" alt="Project 2"> -->
+          <a href="movies.html" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2016/01/22/08/20/film-1155439_640.jpg" alt="Image" class="custom-image"></a>
+
+          <h3>Moives Finder</h3>
+          <p>Use full for finding any time-line movies with simmilar name with ratings. 
+</p>
+        </div>
     </div>
   </section>
 
@@ -94,15 +137,56 @@
       <h2>Contact Me</h2>
       <form id="contactForm">
         <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <br><input type="email" name="email" placeholder="Your Email" required>
+        <br><textarea name="message" placeholder="Your Message" required></textarea>
+       <br> <button type="submit">Send Message</button>
       </form>
     </div>
   </section>
+<button id="scrollToTopBtn" title="go to top" class="upBtn">👆 
+    </button>
+     <script>
+      window.addEventListener("scroll", function () {
+  scrollToTopBtn.style.opacity = (window.scrollY > 20) ? "1" : "0";
+});
 
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+      </script>
   <!-- Footer -->
   <footer>
+    <div class="col-auto">
+  <div class="header-right-list">
+    <ul>
+      <li>
+        <a href="https://chat.whatsapp.com/BdrOxY4b6dN6xjCbpNPxUp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com/abhiraut_1999?igshid=NTc4MTIwNjQ2YQ==">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/abhishek-raut1999 ">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:abhishekraut031@gmail.com">
+
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
     <p>&copy; 2024 Abhishek Raut. All rights reserved.</p>
   </footer>
 
